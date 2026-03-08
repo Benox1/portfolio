@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio BTS SIO — Mes projets en formation, en stage et personnels">
+    <title>Projets | Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>`n    <canvas id="star-canvas"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">✦ Portfolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="about.html#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">        <div class="container">
+            <span class="section-tag animate-on-scroll">Mes réalisations</span>
+            <h1 class="page-header-title animate-on-scroll">Projets</h1>
+            <p class="page-header-desc animate-on-scroll">Formation, stage et projets personnels</p>
+        </div>
+    </section>
+
+    <!-- TOUS LES PROJETS -->
+    <section class="section" id="tous-les-projets">
+        <div class="container">
+            <div class="projects-grid">
+
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-placeholder"><img src="pokesite.png" alt="Poké Site"></div>
+                        <div class="project-overlay">
+                            <a href="projet-pokemon.html" class="project-link">Voir le projet →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-context">📚 Projet de formation</span>
+                        <h3>Poké Site</h3>
+                        <p>Blog interactif communautaire Pokémon avec système d'expérience, évolution d'avatar starter et encyclopédie des 151.</p>
+                        <div class="project-details">
+                            <div class="project-detail-item"><strong>Contexte :</strong> Projet — 2ème année</div>
+                            <div class="project-detail-item"><strong>Compétences :</strong> Développer, Gérer le patrimoine informatique</div>
+                        </div>
+                        <div class="tag-list"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">PokéAPI</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card animate-on-scroll">
+                    <div class="project-image">
+                        <div class="project-image-placeholder"><img src="aramcup.png" alt="ARAM Cup"></div>
+                        <div class="project-overlay">
+                            <a href="projet-aram.html" class="project-link">Voir le projet →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-context project-context--perso">🚀 Projet personnel</span>
+                        <h3>ARAM Cup</h3>
+                        <p>Site officiel d'un tournoi communautaire League of Legends avec classements et stats automatisés via Python et Google Sheets.</p>
+                        <div class="tag-list"><span class="tag">HTML/CSS</span><span class="tag">Python</span><span class="tag">Google Sheets API</span><span class="tag">Discord Bot</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">✦ Portfolio</a>
+                <p class="footer-text">© 2026 — Benoit DUFOUR · BTS SIO</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

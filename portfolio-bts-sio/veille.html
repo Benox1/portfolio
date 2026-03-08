@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio BTS SIO — Ma veille technologique sur l'IA et la création textuelle">
+    <title>Veille Technologique | Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>`n    <canvas id="star-canvas"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">✦ Portfolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">à propos</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="veille.html" class="nav-link active">Veille</a></li>
+                <li><a href="about.html#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">        <div class="container">
+            <span class="section-tag animate-on-scroll">Rester à jour</span>
+            <h1 class="page-header-title animate-on-scroll">Veille Technologique</h1>
+            <p class="page-header-desc animate-on-scroll">L'intelligence artificielle au service de la création
+                textuelle</p>
+        </div>
+    </section>
+
+    <!-- SUJET DE VEILLE -->
+    <section class="section" id="sujet">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">🌐 Mon sujet</span>
+                <h2 class="section-title">L'IA dans le monde de la création textuelle</h2>
+            </div>
+            <div class="veille-topic glass-card animate-on-scroll">
+                <div class="veille-topic-header">
+                    <span class="veille-topic-icon">🌐</span>
+                    <div>
+                        <h3>Comment l'IA transforme l'écriture et la production de textes</h3>
+                        <p>De la rédaction d'articles à la création littéraire, l'IA redéfinit notre rapport à l'écrit.
+                        </p>
+                    </div>
+                </div>
+                <div class="veille-topic-body">
+                    <h4>Pourquoi ce sujet ?</h4>
+                    <p>L'intelligence artificielle générative a connu une explosion sans précédent dans le domaine de la
+                        création textuelle. Des outils comme ChatGPT, Claude ou Gemini sont désormais capables de
+                        rédiger des articles, des essais, des scripts, voire des romans entiers. Cette révolution
+                        touche tous les métiers liés à l'écriture : journalisme, marketing, littérature, rédaction web,
+                        traduction et communication. En tant qu'étudiant en informatique, comprendre comment ces
+                        technologies fonctionnent et les enjeux qu'elles soulèvent me semble essentiel.</p>
+
+                    <h4>Synthèse de ma veille</h4>
+                    <p>Les modèles de langage (LLM) comme GPT-4, Claude 3 ou Gemini reposent sur des architectures de
+                        type Transformer, entraînés sur d'immenses corpus de textes. Ils sont capables de générer du
+                        contenu cohérent, créatif et souvent difficile à distinguer d'un texte écrit par un humain.
+                        Leur adoption est massive : des agences de presse utilisent l'IA pour rédiger des dépêches,
+                        des maisons d'édition reéoivent des manuscrits générés par IA, et les rédacteurs web s'appuient
+                        sur ces outils pour gagner en productivité.</p>
+                    <p>Cependant, cette évolution souléve de nombreuses questions : qualité et fiabilité des contenus
+                        générés, risques de désinformation, impact sur l'emploi des rédacteurs et des journalistes,
+                        et problèmes de droits d'auteur. La frontière entre l'assistance à l'écriture et la
+                        substitution de l'auteur humain devient de plus en plus floue.</p>
+
+                    <h4>Les outils IA pour la création textuelle</h4>
+                    <div class="veille-tools-grid">
+                        <div class="veille-tool glass-card">
+                            <strong>ChatGPT (OpenAI)</strong>
+                            <p>Modèle conversationnel capable de rédiger des textes, résumés, scripts et contenus
+                                créatifs.</p>
+                        </div>
+                        <div class="veille-tool glass-card">
+                            <strong>Claude (Anthropic)</strong>
+                            <p>Assistant IA spécialisé dans la rédaction longue, l'analyse de textes et la synthèse
+                                documentaire.</p>
+                        </div>
+                        <div class="veille-tool glass-card">
+                            <strong>Jasper AI</strong>
+                            <p>Plateforme de création de contenu marketing : articles de blog, posts réseaux sociaux,
+                                emails.</p>
+                        </div>
+                        <div class="veille-tool glass-card">
+                            <strong>Notion AI</strong>
+                            <p>IA intégrée à Notion pour la rédaction, la correction et la reformulation de documents.
+                            </p>
+                        </div>
+                        <div class="veille-tool glass-card">
+                            <strong>DeepL Write</strong>
+                            <p>Outil d'amélioration de textes : reformulation, correction grammaticale et adaptation du
+                                ton.</p>
+                        </div>
+                        <div class="veille-tool glass-card">
+                            <strong>Sudowrite</strong>
+                            <p>Assistant d'écriture créative pour les auteurs de fiction : suggestions de style, suite
+                                de récits.</p>
+                        </div>
+                    </div>
+
+                    <h4>Domaines d'application</h4>
+                    <ul class="veille-enjeux">
+                        <li><strong>Journalisme :</strong> Rédaction automatique de dépêches, résumés d'actualités et
+                            articles de données (AP, Reuters utilisent déjà l'IA)</li>
+                        <li><strong>Marketing & SEO :</strong> Génération de contenus publicitaires, fiches produits,
+                            newsletters et articles optimisés pour le référencement</li>
+                        <li><strong>Littérature :</strong> Aide à l'écriture créative, co-écriture humain-IA, génération
+                            de scénarios et de dialogues</li>
+                        <li><strong>Éducation :</strong> Génération d'exercices, de cours et de supports pédagogiques
+                            personnalisés</li>
+                        <li><strong>Traduction :</strong> Traduction automatique de plus en plus fidèle au contexte et
+                            au registre de langue</li>
+                    </ul>
+
+                    <h4>Enjeux et perspectives</h4>
+                    <ul class="veille-enjeux">
+                        <li><strong>Droits d'auteur :</strong> Qui est l'auteur d'un texte généré par IA ? Les textes
+                            d'entraînement sont-ils utilisés légalement ?</li>
+                        <li><strong>Désinformation :</strong> Risques de production massive de fausses informations,
+                            deep fakes textuels</li>
+                        <li><strong>Emploi :</strong> Menace sur les métiers de la rédaction, évolution vers un réle de
+                            supervision et d'édition</li>
+                        <li><strong>Qualité :</strong> Risques d'hallucinations, de répétitions et de contenus
+                            génériques sans profondeur</li>
+                        <li><strong>Détection :</strong> Développement d'outils pour identifier les textes générés par
+                            IA (GPTZero, Originality.ai)</li>
+                        <li><strong>Réglementation :</strong> L'AI Act européen impose la transparence sur les contenus
+                            générés par IA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="section section--alt" id="sources">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">🌐 Mes sources</span>
+                <h2 class="section-title">Sources de veille</h2>
+                <p class="section-desc">Les ressources que je consulte régulièrement sur l'IA et la création textuelle
+                </p>
+            </div>
+            <div class="veille-grid">
+                <a href="https://www.01net.com/tag/intelligence-artificielle/" target="_blank"
+                    class="veille-card glass-card animate-on-scroll">
+                    <div class="veille-card-icon">🌐</div>
+                    <h4>01net - IA</h4>
+                    <p>Actualités sur les avancées de l'IA et leurs impacts.</p>
+                    <span class="veille-card-type">Site d'actualités</span>
+                </a>
+                <a href="https://www.lemonde.fr/intelligence-artificielle/" target="_blank"
+                    class="veille-card glass-card animate-on-scroll">
+                    <div class="veille-card-icon">🌐</div>
+                    <h4>Le Monde - IA</h4>
+                    <p>Analyses approfondies sur l'IA, l'éthique et la société.</p>
+                    <span class="veille-card-type">Presse généraliste</span>
+                </a>
+                <a href="https://www.reddit.com/r/artificial/" target="_blank"
+                    class="veille-card glass-card animate-on-scroll">
+                    <div class="veille-card-icon">🌐</div>
+                    <h4>Reddit r/artificial</h4>
+                    <p>Discussions sur les modèles de langage et la génération de texte.</p>
+                    <span class="veille-card-type">Forum</span>
+                </a>
+            </div>
+
+            <div class="veille-method glass-card animate-on-scroll">
+                <h3>🌐 Ma méthode de veille</h3>
+                                <div class="method-steps">
+                    <div class="method-step">
+                        <div class="method-step-number">1</div>
+                        <div><strong>Veille PUSH — Perplexity</strong><p>Utilisation des tàches Perplexity (méthode push) : réception automatique de résumés et d'alertes sur l'IA et la création textuelle sans avoir à chercher.</p></div>
+                    </div>
+                    <div class="method-step">
+                        <div class="method-step-number">2</div>
+                        <div><strong>Veille PULL — Recherche personnelle</strong><p>Recherches autonomes (méthode pull) sur des sites spécialisés : 01net, Le Monde IA, IEEE Spectrum, les blogs officiels d'OpenAI, Anthropic et Google.</p></div>
+                    </div>
+                    <div class="method-step">
+                        <div class="method-step-number">3</div>
+                        <div><strong>Tri & sélection</strong><p>Lecture rapide, filtrage des articles pertinents, évaluation de la fiabilité des sources.</p></div>
+                    </div>
+                    <div class="method-step">
+                        <div class="method-step-number">4</div>
+                        <div><strong>Analyse</strong><p>Lecture approfondie, prise de notes, identification des tendances et des nouveaux outils.</p></div>
+                    </div>
+                    <div class="method-step">
+                        <div class="method-step-number">5</div>
+                        <div><strong>Synthèse</strong><p>Rédaction d'une synthèse et diffusion sur ce portfolio.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">✦ Portfolio</a>
+                <p class="footer-text">© 2026 é Benoit DUFOUR · BTS SIO</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
