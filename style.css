@@ -2373,3 +2373,46 @@ img { max-width: 100%; display: block; }
 .magic-card::after {
     pointer-events: none !important;
 }
+
+/* Aligned List (Missions & Fonctionnalités) */
+.aligned-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.aligned-list li {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    align-items: start;
+    color: var(--text-muted);
+}
+.aligned-list li:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.aligned-list li::before {
+    content: "?";
+    color: var(--primary);
+    position: absolute;
+    left: -1.5rem;
+    top: 1.65rem;
+    font-size: 0.9rem;
+}
+.aligned-list li strong {
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+    letter-spacing: 0.02em;
+    font-size: 1.05rem;
+    display: block;
+}
+@media (max-width: 768px) {
+    .aligned-list li {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}

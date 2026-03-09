@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stage de 2ème année BTS SIO — Développement d'un site web dynamique administrable en temps réel.">
+    <title>Stage 2ème année | Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="star-canvas"></canvas>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">✦ Portfolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="about.html#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="projet-detail-hero">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="container">
+            <div class="projet-detail-header animate-on-scroll">
+                <a href="projets.html" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Retour aux projets
+                </a>
+                <span class="section-tag">💼 Projet de stage</span>
+                <h1 class="projet-detail-title">Site Web Dynamique</h1>
+                <p class="projet-detail-subtitle">
+                    Développement d'un site web dynamique administrable en temps réel via une interface administrateur dédiée. Réalisé lors de mon stage de 2ème année chez <strong>Gestion DS</strong>.
+                </p>
+                <div class="projet-detail-meta">
+                    <span class="meta-badge">🏢 Gestion DS</span>
+                    <span class="meta-badge">💻 Développement web</span>
+                    <span class="meta-badge">⏱️ 8 semaines</span>
+                    <span class="meta-badge">📅 Déc. 2025 — Jan. 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESSOURCES ==================== -->
+    <div class="container" style="padding-top: 28px;">
+        <div class="project-resources magic-card animate-on-scroll">
+            <div class="project-resources-info">
+                <span class="project-resources-label">📄 Ressources du projet</span>
+                <p>Consulte le rapport complet détaillant mon stage de 2ème année.</p>
+            </div>
+            <div class="project-resources-actions">
+                <a href="maquette.png" download="maquette.png" class="btn btn--outline">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+                    Ouvrir la Maquette
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONTENU ==================== -->
+    <div class="container">
+
+        <!-- Contexte -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Contexte du stage</h2>
+                <p>
+                    Pour approfondir mes compétences techniques en développement web lors de ce second stage, l'entreprise <strong>Gestion DS</strong> m'a confié la mission de concevoir un site internet dynamique. Il devait être parfaitement administrable en autonomie, et inclure un espace sécurisé pour les utilisateurs et l'administration.
+                </p>
+            </div>
+        </section>
+
+        <!-- Objectifs -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Missions et réalisations</h2>
+                <ul>
+                    <li><strong>Interface d'administration (Back-Office)&nbsp;:</strong> Création d'un tableau de bord sécurisé permettant d'ajouter, modifier ou supprimer du contenu du site en temps réel.</li>
+                    <li><strong>Partie publique (Front-Office)&nbsp;:</strong> Intégration d'un design responsive mettant en valeur l'identité et les services de l'entreprise.</li>
+                    <li><strong>Architecture technique&nbsp;:</strong> Mise en place du serveur local de développement et de la base de données associée.</li>
+                    <li><strong>Sécurisation des accès&nbsp;:</strong> Système d'authentification robuste avec gestion des droits utilisateurs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Aperçu de l'application -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Aperçu du site</h2>
+                <div style="display: flex; flex-direction: column; gap: 3rem; margin-top: 1.5rem;">
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="project-resources magic-card" style="margin: 0;">
+                            <div class="project-resources-info" style="margin: 0; padding: 0.5rem;">
+                                <span class="project-resources-label">🏠 Page d'accueil du site internet</span>
+                                <p style="margin-top: 0.5rem;">Mise en valeur des locaux de Décoration de Sousa, permettant de présenter brièvement l'activité de l'entreprise avec une interface moderne.</p>
+                            </div>
+                        </div>
+                        <img src="Deco-Accueil.png" alt="Accueil du site" style="border-radius:12px;width:100%;object-fit:cover;box-shadow:var(--neon-glow)">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="project-resources magic-card" style="margin: 0;">
+                            <div class="project-resources-info" style="margin: 0; padding: 0.5rem;">
+                                <span class="project-resources-label">⚙️ Tableau de bord d'administration</span>
+                                <p style="margin-top: 0.5rem;">Interface sécurisée réservée aux administrateurs permettant de modifier les différentes sections de chaque page (Accueil, À propos, Services...) de façon dynamique.</p>
+                            </div>
+                        </div>
+                        <img src="Deco-Gestion.png" alt="Gestion du contenu" style="border-radius:12px;width:100%;object-fit:cover;box-shadow:var(--neon-glow)">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Technologies utilisées</h2>
+                <div class="tech-grid">
+                    <div class="tech-item magic-card">
+                        <div class="icon">🐘</div>
+                        <h4>PHP</h4>
+                        <p>Logique métier côté serveur et communication sécurisée avec la BDD.</p>
+                    </div>
+                    <div class="tech-item magic-card">
+                        <div class="icon">🗄️</div>
+                        <h4>MySQL</h4>
+                        <p>Mise en place et architecture de la base de données relationnelle.</p>
+                    </div>
+                    <div class="tech-item magic-card">
+                        <div class="icon">🌐</div>
+                        <h4>HTML / CSS / JS</h4>
+                        <p>Intégration d'interfaces ergonomiques, responsives et dynamiques.</p>
+                    </div>
+                    <div class="tech-item magic-card">
+                        <div class="icon">🔒</div>
+                        <h4>Sessions et Rôles</h4>
+                        <p>Mécanisme d'authentification avec séparation public / privé.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation entre projets -->
+        <div class="project-nav animate-on-scroll">
+            <a href="projet-stage1.html" class="btn btn--outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Stage 1ère année
+            </a>
+            <a href="projets.html" class="btn btn--outline">
+                Tous les projets
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">✦ Portfolio</a>
+                <p class="footer-text">© 2026 — Benoit DUFOUR · BTS SIO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

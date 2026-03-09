@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stage de 1ère année BTS SIO — Création d'une application de surveillance de bases de données et serveurs.">
+    <title>Stage 1ère année | Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="star-canvas"></canvas>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">✦ Portfolio</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="about.html#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="projet-detail-hero">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="container">
+            <div class="projet-detail-header animate-on-scroll">
+                <a href="projets.html" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Retour aux projets
+                </a>
+                <span class="section-tag">💼 Projet de stage</span>
+                <h1 class="projet-detail-title">Application de Surveillance</h1>
+                <p class="projet-detail-subtitle">
+                    Création d'une application de surveillance de bases de données et serveurs, avec système d'envoi de rapports d'incidents. Réalisé lors de mon stage de 1ère année chez <strong>Gestion DS</strong>.
+                </p>
+                <div class="projet-detail-meta">
+                    <span class="meta-badge">🏢 Gestion DS</span>
+                    <span class="meta-badge">👀 Monitoring</span>
+                    <span class="meta-badge">⏱️ 8 semaines</span>
+                    <span class="meta-badge">📅 Mai — Juil. 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RESSOURCES ==================== -->
+    <div class="container" style="padding-top: 28px;">
+        <div class="project-resources magic-card animate-on-scroll">
+            <div class="project-resources-info">
+                <span class="project-resources-label">📄 Ressources du projet</span>
+                <p>Consulte les spécifications techniques et le suivi d'avancement du projet.</p>
+            </div>
+            <div class="project-resources-actions">
+                <a href="Spécifications Techniques.pdf" download="Spécifications Techniques.pdf" class="btn btn--primary">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Cahier des Charges
+                </a>
+                <a href="Taches et Avancement.xlsx" download="Taches et Avancement.xlsx" class="btn btn--outline">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Diagramme de Gantt
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONTENU ==================== -->
+    <div class="container">
+
+        <!-- Contexte -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Contexte du stage</h2>
+                <p>
+                    Ce projet a été réalisé dans le cadre de mon stage de première année de BTS SIO, au sein de l'entreprise <strong>Gestion DS</strong> située à Villeneuve-Saint-Georges. L'entreprise avait besoin d'un outil interne fiable pour surveiller l'état de ses bases de données et de ses serveurs critiques afin de réagir rapidement en cas de panne.
+                </p>
+            </div>
+        </section>
+
+        <!-- Objectifs -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Missions et réalisations</h2>
+                <ul>
+                    <li><strong>Analyse des besoins&nbsp;:</strong> Comprendre les attentes de l'équipe technique concernant les alertes et les métriques à surveiller.</li>
+                    <li><strong>Création de l'application&nbsp;:</strong> Développer une solution logicielle capable de "pinger" et d'interroger régulièrement les serveurs et les bases de données.</li>
+                    <li><strong>Système d'alerting&nbsp;:</strong> Implémenter l'envoi automatisé de rapports d'incidents (par e-mail ou notifications) dès qu'une anomalie est détectée.</li>
+                    <li><strong>Tests et déploiement&nbsp;:</strong> S'assurer de la fiabilité de l'outil dans un environnement de test avant son utilisation en production.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Aperçu de l'application -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Aperçu de l'application</h2>
+                <div style="display: flex; flex-direction: column; gap: 3rem; margin-top: 1.5rem;">
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="project-resources magic-card" style="margin: 0;">
+                            <div class="project-resources-info" style="margin: 0; padding: 0.5rem;">
+                                <span class="project-resources-label">📊 Modèle relationnel des données</span>
+                                <p style="margin-top: 0.5rem;">Schéma de la base de données interne conçue via l'éditeur d'analyse pour stocker les informations des serveurs, des bases et des incidents.</p>
+                            </div>
+                        </div>
+                        <img src="Diagramme_BDD.png" alt="MCD HFSQL" style="border-radius:12px;width:100%;object-fit:cover;box-shadow:var(--neon-glow)">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="project-resources magic-card" style="margin: 0;">
+                            <div class="project-resources-info" style="margin: 0; padding: 0.5rem;">
+                                <span class="project-resources-label">📝 Formulaire de gestion de base de données</span>
+                                <p style="margin-top: 0.5rem;">Ce formulaire permet d'ajouter facilement une nouvelle base de données à surveiller en renseignant ses identifiants de connexion et sa requête de test personnalisée.</p>
+                            </div>
+                        </div>
+                        <img src="Formulaire-BDD.png" alt="Formulaire WINDEV" style="border-radius:12px;width:100%;object-fit:cover;box-shadow:var(--neon-glow)">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="project-resources magic-card" style="margin: 0;">
+                            <div class="project-resources-info" style="margin: 0; padding: 0.5rem;">
+                                <span class="project-resources-label">📈 Tableau de bord et historique des incidents</span>
+                                <p style="margin-top: 0.5rem;">Tableau de bord dynamique qui répertorie en temps réel l'ensemble des pannes détectées au cours des phases de vérification et de surveillance.</p>
+                            </div>
+                        </div>
+                        <img src="Incident-Gestionnaire.png" alt="Historique des incidents" style="border-radius:12px;width:100%;object-fit:cover;box-shadow:var(--neon-glow)">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">Technologies utilisées</h2>
+                <div class="tech-grid">
+                    <div class="tech-item magic-card">
+                        <div class="icon" style="background:transparent; box-shadow:none; width:60px; height:60px; margin:0 auto;"><img src="windev.png" alt="WINDEV 23" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 0 8px rgba(0, 240, 255, 0.5));"></div>
+                        <h4>WINDEV 23</h4>
+                        <p>Environnement de développement (AGL) utilisé pour la conception de l'ensemble de l'interface et de la base de données.</p>
+                    </div>
+                    <div class="tech-item magic-card">
+                        <div class="icon" style="background:transparent; box-shadow:none; width:60px; height:60px; margin:0 auto;"><img src="wlanguage.png" alt="WLangage" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 0 8px rgba(0, 240, 255, 0.5));"></div>
+                        <h4>WLangage</h4>
+                        <p>Langage de programmation principal du projet pour la logique métier et les requêtes (fonctions, procédures).</p>
+                    </div>
+                    <div class="tech-item magic-card">
+                        <div class="icon" style="background:transparent; box-shadow:none; width:60px; height:60px; margin:0 auto;"><img src="hfsql.png" alt="HFSQL" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 0 8px rgba(0, 240, 255, 0.5));"></div>
+                        <h4>HFSQL</h4>
+                        <p>Création du dictionnaire de données et requêtes SQL pour interroger et tester la disponibilité des bases reliées.</p>
+                    </div>
+                    <div class="tech-item magic-card">
+                        <div class="icon">✉️</div>
+                        <h4>Réseau & SMTP</h4>
+                        <p>Commandes de ping (ICMP) pour surveiller les serveurs et envoi d'emails automatiques via un serveur SMTP interne.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation entre projets -->
+        <div class="project-nav animate-on-scroll">
+            <a href="projets.html" class="btn btn--outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Tous les projets
+            </a>
+            <a href="projet-stage2.html" class="btn btn--outline">
+                Stage 2ème année
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">✦ Portfolio</a>
+                <p class="footer-text">© 2026 — Benoit DUFOUR · BTS SIO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

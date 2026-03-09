@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Poké Site — Blog interactif communautaire sur l'univers Pokémon avec système d'expérience et évolution d'avatar">
+    <meta name="description"
+        content="Poké Site — Blog interactif communautaire sur l'univers Pokémon avec système d'expérience et évolution d'avatar">
     <title>Poké Site | Portfolio BTS SIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,7 +35,9 @@
         <div class="container">
             <div class="projet-detail-header animate-on-scroll">
                 <a href="projets.html" class="back-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
                     Retour aux projets
                 </a>
                 <span class="section-tag">🏫 Projet de formation</span>
@@ -47,7 +50,7 @@
                 <div class="projet-detail-meta">
                     <span class="meta-badge">🎮 Pokémon</span>
                     <span class="meta-badge">💬 Blog interactif</span>
-                    <span class="meta-badge">👥 Multi-utilisateurs</span>
+                    <span class="meta-badge">👥 En binôme (Théo OGER & Benoit DUFOUR)</span>
                     <span class="meta-badge">📅 2025 — 2026</span>
                 </div>
             </div>
@@ -62,13 +65,17 @@
                 <p>Consulte la documentation technique ou télécharge le cahier des charges du projet.</p>
             </div>
             <div class="project-resources-actions">
-                <a href="#" class="btn btn--outline" style="opacity:0.5; cursor:not-allowed;" title="Bientôt disponible">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                    Démo (bientôt)
-                </a>
-                <a href="#" class="btn btn--outline" style="opacity:0.5; cursor:not-allowed;" title="Bientôt disponible">
+                <a href="Cahier_des_charges_Théo_Benoit.txt" download="Cahier_des_charges_Théo_Benoit.txt" class="btn btn--primary">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    Cahier des charges (PDF)
+                    Télécharger le Cahier des charges
+                </a>
+                <a href="Gantt.xlsx" download="Gantt.xlsx" class="btn btn--outline">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    Diagramme de Gantt
+                </a>
+                <a href="Maquette_Théo_Benoit.pdf" download="Maquette_Théo_Benoit.pdf" class="btn btn--outline">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    Maquette (PDF)
                 </a>
             </div>
         </div>
@@ -97,52 +104,16 @@
             </div>
         </section>
 
-        <!-- Domaine de gestion -->
+
+        <!-- Règles de gestion et inscription -->
         <section class="projet-section animate-on-scroll">
             <div class="projet-content">
-                <h2 class="projet-section-title">Domaines fonctionnels</h2>
-                <p>Le projet se divise en deux grands domaines :</p>
-
-                <div class="tech-grid" style="margin-top: 1.5rem;">
-                    <div class="tech-item magic-card">
-                        <div class="icon">💬</div>
-                        <h4>Blog interactif</h4>
-                        <p>Création / fermeture de fils, messagerie avec réponses et système like/dislike, gestion de compte avec avatar Pokémon évolutif</p>
-                    </div>
-                    <div class="tech-item magic-card">
-                        <div class="icon">📖</div>
-                        <h4>Documentation Pokémons</h4>
-                        <p>Barre de recherche prédictive, fiches détaillées, liste des 151 Pokémons avec images cliquables</p>
-                    </div>
-                    <div class="tech-item magic-card">
-                        <div class="icon">⭐</div>
-                        <h4>Système d'expérience</h4>
-                        <p>Points gagnés à chaque contribution (message, réponse, like reçu), débloquant les évolutions d'avatar</p>
-                    </div>
-                    <div class="tech-item magic-card">
-                        <div class="icon">🧬</div>
-                        <h4>Évolution d'avatar</h4>
-                        <p>Le starter choisi à l'inscription (Bulbizarre, Salamèche, Carapuce) évolue selon l'XP acquise</p>
-                    </div>
-                    <div class="tech-item magic-card">
-                        <div class="icon">👤</div>
-                        <h4>Page de profil</h4>
-                        <p>Visualisation du Pokémon actuel, niveau d'expérience, historique des contributions et modification du compte</p>
-                    </div>
-                    <div class="tech-item magic-card">
-                        <div class="icon">🛡️</div>
-                        <h4>Rôle Administrateur</h4>
-                        <p>Fermeture et suppression de tout fil, gestion des utilisateurs, droits étendus sur l'ensemble de la plateforme</p>
-                    </div>
+                <h2 class="projet-section-title">Règles de gestion et inscription</h2>
+                <p>Des contraintes métier strictes encadrent la création de compte et l'utilisation de la plateforme :
+                </p>
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 1px solid rgba(139,92,246,0.2); margin-bottom: 2rem; margin-top: 1.5rem;">
+                    <img src="inscription_pokesite.png" alt="Inscription PokéSite" style="width: 100%; display: block;">
                 </div>
-            </div>
-        </section>
-
-        <!-- Règles de gestion -->
-        <section class="projet-section animate-on-scroll">
-            <div class="projet-content">
-                <h2 class="projet-section-title">Règles de gestion</h2>
-                <p>Des contraintes métier strictes encadrent la création de compte et l'utilisation de la plateforme :</p>
 
                 <div class="tech-grid" style="margin-top: 1.5rem;">
                     <div class="tech-item magic-card">
@@ -163,7 +134,8 @@
                     <div class="tech-item magic-card">
                         <div class="icon">🔒</div>
                         <h4>Accès restreint</h4>
-                        <p>Connexion obligatoire pour accéder à toutes les fonctionnalités. Aucune page publique sans authentification.</p>
+                        <p>Connexion obligatoire pour accéder à toutes les fonctionnalités. Aucune page publique sans
+                            authentification.</p>
                     </div>
                     <div class="tech-item magic-card">
                         <div class="icon">🗑️</div>
@@ -183,52 +155,35 @@
         <section class="projet-section animate-on-scroll">
             <div class="projet-content">
                 <h2 class="projet-section-title">Fonctionnalités du blog</h2>
-                <p>Le blog interactif est le cœur de la plateforme. Il permet aux utilisateurs d'échanger autour de leurs passions :</p>
+                <p>Le blog interactif est le cœur de la plateforme. Il permet aux utilisateurs d'échanger autour de
+                    leurs passions :</p>
                 <ul>
-                    <li><strong>Création de fil :</strong> N'importe quel utilisateur connecté peut ouvrir un nouveau fil de discussion (question jeu vidéo, jeux de cartes, théories, partage d'expérience…)</li>
-                    <li><strong>Fermeture de fil :</strong> Le créateur du fil ou un Administrateur peut fermer (archiver) un fil, empêchant de nouveaux messages</li>
-                    <li><strong>Messages & réponses :</strong> Système de fils imbriqués — chaque message peut recevoir des réponses directes</li>
-                    <li><strong>Like / Dislike :</strong> Les utilisateurs peuvent réagir à chaque message ou réponse, influençant le score XP du rédacteur</li>
-                    <li><strong>Système d'expérience :</strong> Chaque contribution (message, réponse, réaction positive reçue) rapporte des points d'expérience</li>
-                    <li><strong>Évolution d'avatar :</strong> Les points XP débloquent les évolutions du Pokémon starter choisi à l'inscription</li>
+                    <li><strong>Création de fil&nbsp;:</strong> N'importe quel utilisateur connecté peut ouvrir un nouveau
+                        fil de discussion (question jeu vidéo, jeux de cartes, théories, partage d'expérience…)</li>
+                    <li><strong>Fermeture de fil&nbsp;:</strong> Le créateur du fil ou un Administrateur peut fermer
+                        (archiver) un fil, empêchant de nouveaux messages</li>
+                    <li><strong>Messages & réponses&nbsp;:</strong> Système de fils imbriqués — chaque message peut recevoir
+                        des réponses directes</li>
+                    <li><strong>Like / Dislike&nbsp;:</strong> Les utilisateurs peuvent réagir à chaque message ou réponse,
+                        influençant le score XP du rédacteur</li>
+                    <li><strong>Système d'expérience&nbsp;:</strong> Chaque contribution (message, réponse, réaction positive
+                        reçue) rapporte des points d'expérience</li>
+                    <li><strong>Évolution d'avatar&nbsp;:</strong> Les points XP débloquent les évolutions du Pokémon starter
+                        choisi à l'inscription</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Système d'évolution -->
+        <!-- Profil utilisateur -->
         <section class="projet-section animate-on-scroll">
             <div class="projet-content">
-                <h2 class="projet-section-title">Le système d'évolution Pokémon</h2>
+                <h2 class="projet-section-title">Page de profil</h2>
                 <p>
-                    Chaque utilisateur choisit un Pokémon starter lors de son inscription. Ce Pokémon évolue
-                    automatiquement en fonction de l'expérience accumulée sur la plateforme.
+                    Les informations du profil sont modifiables depuis cet espace.
                 </p>
-
-                <div class="tech-grid" style="margin-top: 1.5rem; grid-template-columns: repeat(3, 1fr);">
-                    <div class="tech-item magic-card" style="text-align:center;">
-                        <div class="icon" style="font-size:2.5rem;">🌿</div>
-                        <h4>Bulbizarre</h4>
-                        <p style="font-size:0.85rem;">Bulbizarre → Herbizarre → Florizarre</p>
-                        <p style="font-size:0.8rem; opacity:0.7; margin-top:0.5rem;">Starter Plante</p>
-                    </div>
-                    <div class="tech-item magic-card" style="text-align:center;">
-                        <div class="icon" style="font-size:2.5rem;">🔥</div>
-                        <h4>Salamèche</h4>
-                        <p style="font-size:0.85rem;">Salamèche → Reptincel → Dracaufeu</p>
-                        <p style="font-size:0.8rem; opacity:0.7; margin-top:0.5rem;">Starter Feu</p>
-                    </div>
-                    <div class="tech-item magic-card" style="text-align:center;">
-                        <div class="icon" style="font-size:2.5rem;">💧</div>
-                        <h4>Carapuce</h4>
-                        <p style="font-size:0.85rem;">Carapuce → Carabaffe → Tortank</p>
-                        <p style="font-size:0.8rem; opacity:0.7; margin-top:0.5rem;">Starter Eau</p>
-                    </div>
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 1px solid rgba(139,92,246,0.2); margin-top: 1.5rem;">
+                    <img src="profil.png" alt="Profil utilisateur PokéSite" style="width: 100%; display: block;">
                 </div>
-
-                <p style="margin-top: 1.5rem;">
-                    L'évolution de l'avatar est visible sur la page de profil de l'utilisateur, créant
-                    une motivation supplémentaire à participer activement à la communauté.
-                </p>
             </div>
         </section>
 
@@ -239,23 +194,24 @@
                 <p>
                     En complément du blog, la plateforme propose une encyclopédie interactive des 151 premiers Pokémons de la première génération :
                 </p>
-                <ul>
-                    <li><strong>Barre de recherche prédictive :</strong> Suggestions automatiques au fur et à mesure de la frappe (nom, type, numéro…)</li>
-                    <li><strong>Fiche détaillée :</strong> Type(s), statistiques de base, évolutions, description Pokédex pour chaque Pokémon recherché</li>
-                    <li><strong>Liste complète des 151 :</strong> Galerie visuelle avec images officielles, chaque sprite est cliquable pour accéder à la fiche (optionnel)</li>
-                    <li><strong>Intégration API :</strong> Les données sont récupérées via PokéAPI pour garantir leur exactitude et leur mise à jour</li>
+                <ul style="margin-bottom: 2rem;">
+                    <li><strong>Barre de recherche prédictive&nbsp;:</strong> Suggestions automatiques au fur et à mesure de la frappe (nom, type, numéro…)</li>
+                    <li><strong>Fiche détaillée&nbsp;:</strong> Type(s), statistiques de base, évolutions, description Pokédex pour chaque Pokémon recherché</li>
                 </ul>
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 1px solid rgba(139,92,246,0.2);">
+                    <img src="recherche.png" alt="Recherche prédictive Pokémon" style="width: 100%; display: block;">
+                </div>
             </div>
         </section>
 
-        <!-- Stack technique -->
+        <!-- Technologies utilisées -->
         <section class="projet-section animate-on-scroll">
             <div class="projet-content">
-                <h2 class="projet-section-title">Stack technique envisagée</h2>
+                <h2 class="projet-section-title">Technologies utilisées</h2>
                 <div class="tech-grid">
                     <div class="tech-item magic-card">
                         <div class="icon">🐘</div>
-                        <h4>PHP / MySQL</h4>
+                        <h4>PHP</h4>
                         <p>Backend MVC, gestion des comptes utilisateurs, fils de discussion et messages</p>
                     </div>
                     <div class="tech-item magic-card">
@@ -265,18 +221,8 @@
                     </div>
                     <div class="tech-item magic-card">
                         <div class="icon">🗄️</div>
-                        <h4>Base de données</h4>
+                        <h4>Base de données MySQL</h4>
                         <p>Modèle relationnel : utilisateurs, fils, messages, réponses, réactions, XP, évolutions</p>
-                    </div>
-                    <div class="tech-item magic-card">
-                        <div class="icon">🔌</div>
-                        <h4>PokéAPI</h4>
-                        <p>API REST publique pour récupérer les données et sprites des 151 Pokémons</p>
-                    </div>
-                    <div class="tech-item magic-card">
-                        <div class="icon">🔒</div>
-                        <h4>Sécurité</h4>
-                        <p>Hachage bcrypt des mots de passe, sessions sécurisées, validation côté serveur</p>
                     </div>
                     <div class="tech-item magic-card">
                         <div class="icon">🛡️</div>
@@ -287,29 +233,20 @@
             </div>
         </section>
 
-        <!-- Compétences mobilisées -->
-        <section class="projet-section animate-on-scroll">
-            <div class="projet-content">
-                <h2 class="projet-section-title">Compétences mobilisées</h2>
-                <ul>
-                    <li><strong>Développer :</strong> Conception et développement d'une application web full-stack (PHP/MySQL/JS) avec authentification, rôles et gestion de données</li>
-                    <li><strong>Gérer le patrimoine informatique :</strong> Modélisation d'une base de données relationnelle (MCD/MLD), gestion des comptes et des droits</li>
-                    <li><strong>Travailler en mode projet :</strong> Rédaction du cahier des charges, définition des règles de gestion, découpage fonctionnel</li>
-                    <li><strong>Sécuriser :</strong> Validation des entrées, protection contre les injections SQL et XSS, hachage des mots de passe</li>
-                    <li><strong>Répondre aux besoins utilisateurs :</strong> Conception UX orientée utilisateur (gamification, recherche prédictive, profil interactif)</li>
-                </ul>
-            </div>
-        </section>
 
         <!-- Navigation entre projets -->
         <div class="project-nav animate-on-scroll">
             <a href="projets.html" class="btn btn--outline">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
                 Tous les projets
             </a>
             <a href="projet-aram.html" class="btn btn--outline">
                 Projet suivant
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
             </a>
         </div>
 
