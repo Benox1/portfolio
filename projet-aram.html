@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="ARAM Cup — Site de tournoi communautaire League of Legends avec classements automatisés">
-    <title>ARAM Cup | Portfolio BTS SIO</title>
+    <title>ARAM Cup | Portfolio — Benoit DUFOUR</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -190,6 +190,36 @@
             </div>
         </section>
 
+        <!-- Mon rôle sur le projet -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">👤 Mon rôle sur le projet</h2>
+                <p>
+                    ARAM Cup est un projet <strong>entierèrement réalisé seul</strong>, de la conception à la mise en ligne, en dehors de tout cadre scolaire. J'ai pris en charge toutes les dimensions du projet.
+                </p>
+                <ul>
+                    <li><strong>Conception et développement du site :</strong> Structure HTML/CSS complète, design e-sport, intégration des pages (accueil, classements, participants, règles)</li>
+                    <li><strong>Scripts Python :</strong> Développement du script de collecte via l'API Google Sheets, calcul des classements, génération automatique des images PNG avec Pillow</li>
+                    <li><strong>Bot Discord :</strong> Création et déploiement d'un bot Discord permettant de déclencher la mise à jour du site via une commande</li>
+                    <li><strong>Gestion des données :</strong> Organisation du Google Sheets comme source de vérité pour tous les scores et statistiques</li>
+                    <li><strong>Déploiement :</strong> Hébergement du site sur Vercel avec mise à jour continue</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Difficultés rencontrées -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">🛠️ Difficultés rencontrées</h2>
+                <ul>
+                    <li><strong>Authentification Google API :</strong> Configurer un Service Account et gérer les clés OAuth2 pour accéder au Sheets de façon sécurisée depuis un script local</li>
+                    <li><strong>Génération d'images avec Pillow :</strong> Superposer dynamiquement les données textuelles sur des templates graphiques tout en conservant un rendu propre à toutes les résolutions</li>
+                    <li><strong>Pipeline sans backend dédié :</strong> Trouver une architecture permettant de mettre à jour un site statique sans serveur, uniquement via des fichiers images générés</li>
+                    <li><strong>Maintenabilité en solo :</strong> Concevoir un système assez simple pour être utilisé et maintenu seul, même pendant le tournoi en cours</li>
+                </ul>
+            </div>
+        </section>
+
         <!-- Navigation entre projets -->
         <div class="project-nav animate-on-scroll">
             <a href="projets.html" class="btn btn--outline">
@@ -213,7 +243,7 @@
         <div class="container">
             <div class="footer-content">
                 <a href="index.html" class="footer-logo">✦ Portfolio</a>
-                <p class="footer-text">© 2026 — Benoit DUFOUR · BTS SIO</p>
+                <p class="footer-text">© 2026 — Benoit DUFOUR</p>
             </div>
         </div>
     </footer>

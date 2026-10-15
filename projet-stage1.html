@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Stage de 1ère année BTS SIO — Création d'une application de surveillance de bases de données et serveurs.">
-    <title>Stage 1ère année | Portfolio BTS SIO</title>
+        content="Application de surveillance — Mission de développement logiciel chez Gestion DS (2025) : monitoring de BDD et serveurs, alerting SMTP">
+    <title>App de Surveillance | Portfolio — Benoit DUFOUR</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -40,16 +40,17 @@
                     </svg>
                     Retour aux projets
                 </a>
-                <span class="section-tag">💼 Projet de stage</span>
+                <span class="section-tag">💼 Mission de développement logiciel</span>
                 <h1 class="projet-detail-title">Application de Surveillance</h1>
                 <p class="projet-detail-subtitle">
-                    Création d'une application de surveillance de bases de données et serveurs, avec système d'envoi de rapports d'incidents. Réalisé lors de mon stage de 1ère année chez <strong>Gestion DS</strong>.
+                    Création d'une application de monitoring de bases de données et serveurs avec envoi automatique de rapports d'incidents, réalisée lors de mon stage chez <strong>Gestion DS</strong>.
                 </p>
                 <div class="projet-detail-meta">
                     <span class="meta-badge">🏢 Gestion DS</span>
                     <span class="meta-badge">👀 Monitoring</span>
                     <span class="meta-badge">⏱️ 8 semaines</span>
                     <span class="meta-badge">📅 Mai — Juil. 2025</span>
+                    <span class="meta-badge">📍 Villeneuve-Saint-Georges</span>
                 </div>
             </div>
         </div>
@@ -81,9 +82,9 @@
         <!-- Contexte -->
         <section class="projet-section animate-on-scroll">
             <div class="projet-content">
-                <h2 class="projet-section-title">Contexte du stage</h2>
+                <h2 class="projet-section-title">Contexte de la mission</h2>
                 <p>
-                    Ce projet a été réalisé dans le cadre de mon stage de première année de BTS SIO, au sein de l'entreprise <strong>Gestion DS</strong> située à Villeneuve-Saint-Georges. L'entreprise avait besoin d'un outil interne fiable pour surveiller l'état de ses bases de données et de ses serveurs critiques afin de réagir rapidement en cas de panne.
+                    Ce projet a été réalisé lors de mon stage chez <strong>Gestion DS</strong> à Villeneuve-Saint-Georges. L'entreprise avait besoin d'un outil interne fiable pour surveiller l'état de ses bases de données et de ses serveurs critiques afin de réagir rapidement en cas de panne.
                 </p>
             </div>
         </section>
@@ -170,7 +171,38 @@
             </div>
         </section>
 
-        <!-- Navigation entre projets -->
+        <!-- Mon rôle sur le projet -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">👤 Mon rôle sur le projet</h2>
+                <p>
+                    J'ai réalisé ce projet <strong>en autonomie complète</strong>, à partir du cahier des charges défini avec mon maître de stage. Aucun code existant n'était fourni à la base.
+                </p>
+                <ul>
+                    <li><strong>Analyse des besoins&nbsp;:</strong> Recueil des attentes de l'équipe technique (métriques à surveiller, fréquence, format des alertes)</li>
+                    <li><strong>Conception de la base de données&nbsp;:</strong> Modélisation HFSQL des tables (serveurs, bases, incidents) via l'éditeur WinDev</li>
+                    <li><strong>Développement de l'application&nbsp;:</strong> Interface WinDev pour gérer les ressources surveillées et visualiser l'historique des incidents</li>
+                    <li><strong>Système de surveillance&nbsp;:</strong> Implémentation des pings ICMP et des requêtes de test SQL pour vérifier la disponibilité en temps réel</li>
+                    <li><strong>Alerting SMTP&nbsp;:</strong> Configuration de l'envoi automatique d'emails via le serveur SMTP interne de l'entreprise dès détection d'une anomalie</li>
+                    <li><strong>Tests et mise en production&nbsp;:</strong> Validation de l'application sur l'environnement de test avant déploiement réel</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Difficultés rencontrées -->
+        <section class="projet-section animate-on-scroll">
+            <div class="projet-content">
+                <h2 class="projet-section-title">🛠️ Difficultés rencontrées</h2>
+                <ul>
+                    <li><strong>Découverte de WinDev&nbsp;:</strong> Prendre en main un environnement de développement propriétaire (AGL) et le WLangage sans formation préalable, en autodidacte sur le tas</li>
+                    <li><strong>Connexions multi-SGBD&nbsp;:</strong> Gérer la connexion et la surveillance de bases de données de types et de configurations différentes (HFSQL, SQL Server)</li>
+                    <li><strong>Fiabilité des alertes&nbsp;:</strong> Éviter les faux positifs (détections erronées de pannes) tout en garantissant une réactivité suffisante en cas de véritable incident</li>
+                    <li><strong>Environnement de production&nbsp;:</strong> Tester et valider l'outil dans un contexte réel avec des bases de données en production</li>
+                </ul>
+            </div>
+        </section>
+
+
         <div class="project-nav animate-on-scroll">
             <a href="projets.html" class="btn btn--outline">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -193,7 +225,7 @@
         <div class="container">
             <div class="footer-content">
                 <a href="index.html" class="footer-logo">✦ Portfolio</a>
-                <p class="footer-text">© 2026 — Benoit DUFOUR · BTS SIO</p>
+                <p class="footer-text">© 2026 — Benoit DUFOUR</p>
             </div>
         </div>
     </footer>
