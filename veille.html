@@ -16,7 +16,7 @@
             <a href="index.html" class="nav-logo">✦ Portfolio</a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Accueil</a></li>
-                <li><a href="about.html" class="nav-link">à propos</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
                 <li><a href="projets.html" class="nav-link">Projets</a></li>
                 <li><a href="veille.html" class="nav-link active">Veille</a></li>
                 <li><a href="about.html#contact" class="nav-link nav-link--cta">Contact</a></li>
@@ -60,16 +60,22 @@
                         technologies fonctionnent et les enjeux qu'elles soulèvent me semble essentiel.</p>
 
                     <h4>Synthèse de ma veille</h4>
-                    <p>Les modèles de langage (LLM) comme GPT-4, Claude 3 ou Gemini reposent sur des architectures de
-                        type Transformer, entraînés sur d'immenses corpus de textes. Ils sont capables de générer du
+                    <p>Les modèles de langage (LLM) comme GPT, Claude, Gemini ou Mistral reposent sur des architectures
+                        de type Transformer, entraînés sur d'immenses corpus de textes. Ils sont capables de générer du
                         contenu cohérent, créatif et souvent difficile à distinguer d'un texte écrit par un humain.
                         Leur adoption est massive : des agences de presse utilisent l'IA pour rédiger des dépêches,
-                        des maisons d'édition reéoivent des manuscrits générés par IA, et les rédacteurs web s'appuient
+                        des maisons d'édition reçoivent des manuscrits générés par IA, et les rédacteurs web s'appuient
                         sur ces outils pour gagner en productivité.</p>
-                    <p>Cependant, cette évolution souléve de nombreuses questions : qualité et fiabilité des contenus
-                        générés, risques de désinformation, impact sur l'emploi des rédacteurs et des journalistes,
-                        et problèmes de droits d'auteur. La frontière entre l'assistance à l'écriture et la
-                        substitution de l'auteur humain devient de plus en plus floue.</p>
+                    <p>En 2026, le sujet a basculé d'une question technique vers une question <strong>juridique et
+                        économique</strong>. Les modèles ne se contentent plus de répondre : ils deviennent des
+                        <strong>agents</strong> capables de rechercher, rédiger, relire et publier sur plusieurs étapes.
+                        En parallèle, l'Europe impose depuis le 2 août 2026 l'étiquetage des contenus générés par IA, les
+                        procès sur l'entraînement des modèles se multiplient, et la presse s'organise pour faire payer
+                        l'utilisation de ses articles.</p>
+                    <p>Ces évolutions soulèvent de nombreuses questions : qualité et fiabilité des contenus générés,
+                        risques de désinformation, impact sur l'emploi des rédacteurs et des journalistes, et
+                        rémunération des auteurs. La frontière entre l'assistance à l'écriture et la substitution de
+                        l'auteur humain devient de plus en plus floue.</p>
 
                     <h4>Les outils IA pour la création textuelle</h4>
                     <div class="veille-tools-grid">
@@ -82,6 +88,16 @@
                             <strong>Claude (Anthropic)</strong>
                             <p>Assistant IA spécialisé dans la rédaction longue, l'analyse de textes et la synthèse
                                 documentaire.</p>
+                        </div>
+                        <div class="veille-tool glass-card">
+                            <strong>Gemini (Google)</strong>
+                            <p>Assistant intégré à Google Docs et Gmail : rédaction, résumé et reformulation directement
+                                dans les outils de travail.</p>
+                        </div>
+                        <div class="veille-tool glass-card">
+                            <strong>Mistral AI</strong>
+                            <p>Alternative française et européenne, avec des modèles ouverts utilisables dans ses propres
+                                applications.</p>
                         </div>
                         <div class="veille-tool glass-card">
                             <strong>Jasper AI</strong>
@@ -125,22 +141,128 @@
                             d'entraînement sont-ils utilisés légalement ?</li>
                         <li><strong>Désinformation :</strong> Risques de production massive de fausses informations,
                             deep fakes textuels</li>
-                        <li><strong>Emploi :</strong> Menace sur les métiers de la rédaction, évolution vers un réle de
+                        <li><strong>Emploi :</strong> Menace sur les métiers de la rédaction, évolution vers un rôle de
                             supervision et d'édition</li>
                         <li><strong>Qualité :</strong> Risques d'hallucinations, de répétitions et de contenus
                             génériques sans profondeur</li>
-                        <li><strong>Détection :</strong> Développement d'outils pour identifier les textes générés par
-                            IA (GPTZero, Originality.ai)</li>
-                        <li><strong>Réglementation :</strong> L'AI Act européen impose la transparence sur les contenus
-                            générés par IA</li>
+                        <li><strong>Détection :</strong> Les détecteurs (GPTZero, Originality.ai) restent peu fiables ;
+                            la tendance est au marquage à la source (filigranes, métadonnées de provenance)</li>
+                        <li><strong>Réglementation :</strong> L'article 50 de l'AI Act européen rend l'étiquetage des
+                            contenus générés par IA obligatoire depuis le 2 août 2026</li>
+                    </ul>
+
+                    <h4>Ce que ça change pour un développeur</h4>
+                    <ul class="veille-enjeux">
+                        <li><strong>Intégrer l'IA dans une application :</strong> appel d'API de LLM, assistants de
+                            rédaction intégrés, génération de résumés ou de fiches produits</li>
+                        <li><strong>Marquer les contenus générés :</strong> un service qui produit du texte par IA doit
+                            prévoir un marquage lisible par machine et une mention visible pour l'utilisateur</li>
+                        <li><strong>Protéger les données :</strong> ne pas envoyer de données personnelles sans base
+                            légale (RGPD), journaliser et superviser ce que produit l'IA</li>
+                        <li><strong>Garder un humain dans la boucle :</strong> relecture et validation avant publication
+                            pour limiter les hallucinations</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ACTUALITÉS -->
+    <section class="section section--alt" id="actualites">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">📰 Dernières actualités</span>
+                <h2 class="section-title">Ce qui a changé en 2025 — 2026</h2>
+                <p class="section-desc">Les faits marquants relevés dans ma veille, du plus récent au plus ancien</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content magic-card">
+                        <span class="timeline-date">Octobre 2026</span>
+                        <h3>La presse s'unit face à l'IA</h3>
+                        <p>Une quarantaine de médias, dont l'<strong>AFP</strong>, <strong>Radio France</strong> et le
+                            <strong>New York Times</strong>, rejoignent une coalition mondiale d'éditeurs pour négocier
+                            la rémunération de leurs contenus utilisés par les entreprises d'IA.</p>
+                        <div class="tag-list"><span class="tag">Presse</span><span class="tag">Licences</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content magic-card">
+                        <span class="timeline-date">2 août 2026</span>
+                        <h3>AI Act : l'étiquetage devient obligatoire</h3>
+                        <p>L'<strong>article 50</strong> du règlement européen sur l'IA entre en application : les
+                            fournisseurs doivent marquer les contenus générés (de façon lisible par machine) et les
+                            déployeurs doivent signaler clairement les textes, images ou vidéos produits par IA. Un délai
+                            jusqu'au 2 décembre 2026 est accordé pour le marquage technique des systèmes déjà sur le
+                            marché.</p>
+                        <div class="tag-list"><span class="tag">Réglementation</span><span class="tag">Transparence</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content magic-card">
+                        <span class="timeline-date">Juin 2026</span>
+                        <h3>Code de bonne pratique sur le marquage</h3>
+                        <p>La Commission européenne publie un code de bonne pratique pour appliquer l'article 50 :
+                            filigranes, métadonnées de provenance, distinction entre contenu entièrement généré et
+                            contenu assisté par IA, et icône commune européenne.</p>
+                        <div class="tag-list"><span class="tag">Réglementation</span><span class="tag">Détection</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content magic-card">
+                        <span class="timeline-date">2026</span>
+                        <h3>L'ère des agents IA</h3>
+                        <p>Les nouvelles générations de modèles (GPT, Claude, Gemini, Mistral) ne font plus que
+                            répondre : elles enchaînent recherche, rédaction et relecture de façon autonome. L'IA
+                            s'intègre directement dans les outils de travail (traitement de texte, messagerie,
+                            outils de développement).</p>
+                        <div class="tag-list"><span class="tag">Modèles</span><span class="tag">Agents</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content magic-card">
+                        <span class="timeline-date">Mars 2026</span>
+                        <h3>Pas de droit d'auteur sans auteur humain</h3>
+                        <p>La Cour suprême des États-Unis refuse d'examiner l'affaire <strong>Thaler</strong>,
+                            confirmant qu'une œuvre doit avoir un auteur humain pour être protégée. En Allemagne, le
+                            tribunal de Munich refuse aussi la protection à des créations générées par simple prompt.</p>
+                        <div class="tag-list"><span class="tag">Droit d'auteur</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content magic-card">
+                        <span class="timeline-date">Janvier 2026</span>
+                        <h3>Les éditeurs attaquent Google</h3>
+                        <p><strong>Hachette Book Group</strong> et <strong>Cengage</strong> demandent à rejoindre une
+                            action en justice contre Google, accusé d'avoir entraîné Gemini sur des livres sans
+                            autorisation. En France, une proposition de loi au Sénat vise à présumer l'utilisation des
+                            œuvres par les fournisseurs d'IA.</p>
+                        <div class="tag-list"><span class="tag">Édition</span><span class="tag">Procès</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content magic-card">
+                        <span class="timeline-date">Septembre 2025</span>
+                        <h3>Anthropic indemnise les auteurs</h3>
+                        <p>Anthropic accepte de verser <strong>1,5 milliard de dollars</strong> (environ 3 000 $ par
+                            livre) à des auteurs dont les ouvrages piratés avaient servi à entraîner ses modèles. Un
+                            accord historique qui fait jurisprudence pour tout le secteur.</p>
+                        <div class="tag-list"><span class="tag">Droit d'auteur</span><span class="tag">Procès</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SOURCES -->
-    <section class="section section--alt" id="sources">
+    <section class="section" id="sources">
         <div class="container">
             <div style="text-align: center; margin-bottom: 3rem;" class="animate-on-scroll">
                 <a href="https://docs.google.com/spreadsheets/d/1eefZ2aGoJ2NfqbezK0ZZN-EsU_zKAm4T8g53_-N9b7w/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn--primary" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.8rem 1.5rem; font-weight: 600;">
@@ -177,6 +299,27 @@
                     <p>Discussions sur les modèles de langage et la génération de texte.</p>
                     <span class="veille-card-type">Forum</span>
                 </a>
+                <a href="https://actualitte.com/" target="_blank"
+                    class="veille-card glass-card animate-on-scroll">
+                    <div class="veille-card-icon">🌐</div>
+                    <h4>ActuaLitté</h4>
+                    <p>Actualité du livre et de l'édition, procès et accords liés à l'IA.</p>
+                    <span class="veille-card-type">Presse spécialisée</span>
+                </a>
+                <a href="https://artificialintelligenceact.eu/fr/" target="_blank"
+                    class="veille-card glass-card animate-on-scroll">
+                    <div class="veille-card-icon">🌐</div>
+                    <h4>AI Act Explorer</h4>
+                    <p>Texte et explications du règlement européen sur l'intelligence artificielle.</p>
+                    <span class="veille-card-type">Réglementation</span>
+                </a>
+                <a href="https://www.economie.gouv.fr/apie" target="_blank"
+                    class="veille-card glass-card animate-on-scroll">
+                    <div class="veille-card-icon">🌐</div>
+                    <h4>APIE — economie.gouv.fr</h4>
+                    <p>Analyses officielles sur la propriété intellectuelle et l'IA générative.</p>
+                    <span class="veille-card-type">Site institutionnel</span>
+                </a>
             </div>
 
             <div class="veille-method glass-card animate-on-scroll">
@@ -185,7 +328,7 @@
                     <div class="method-step">
                         <div class="method-step-number">1</div>
                         <div><strong>Veille PUSH — Perplexity</strong>
-                            <p>Utilisation des tàches Perplexity (méthode push) : réception automatique de résumés et
+                            <p>Utilisation des tâches Perplexity (méthode push) : réception automatique de résumés et
                                 d'alertes sur l'IA et la création textuelle sans avoir à chercher.</p>
                         </div>
                     </div>
@@ -218,8 +361,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
 
